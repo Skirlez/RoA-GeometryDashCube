@@ -1,0 +1,9 @@
+image_xscale = 0
+image_yscale = 0
+alphadec = 0
+scaledec_x = 0.1
+scaledec_y = 0.1
+instant = false
+max_x = 1
+max_y = 1
+max_alpha = 1
