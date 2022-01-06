@@ -8,6 +8,7 @@ padded = false
 dashorbed = false
 spinanyway = false
 dashfire = false
+dashfireanim = 0
 
 hurtbox_spr = sprite_get("hurtbox");
 crouchbox_spr = asset_get("crouchbox");

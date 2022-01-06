@@ -123,6 +123,10 @@ if has_hit == false
 if state != PS_ATTACK_GROUND
     padded = false   
 
+if dashfire == true 
+    dashfireanim += 0.25
+else
+    dashfireanim = 0
 
 
 draw_y = -24

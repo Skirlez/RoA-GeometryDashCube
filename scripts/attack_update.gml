@@ -1,5 +1,5 @@
 //B - Reversals
-if (attack == AT_NSPECIAL || attack == AT_FSPECIAL || attack == AT_DSPECIAL) {
+if (attack == AT_NSPECIAL) {
     trigger_b_reverse();
 }
 
@@ -19,6 +19,7 @@ if (attack == AT_FSPECIAL) {
         dashorb.image_xscale = 1 * spr_dir
         dashorb.image_yscale = 1
         dashorb.scaledec_x = 0.1 * spr_dir
+        dashorb.scaledec_y = 0.1
         dashorb.max_x = 1
         dashorb.deathtimer = 30
         
@@ -36,16 +37,37 @@ if (attack == AT_FSPECIAL) {
         orbani.max_y = -1
         orbani.max_alpha = -1  
         orbani.depth = depth - 1
-        dashfire = true
+        
+        df = instance_create(x, y - 24, "obj_article2")
+        df.sprite_index = sprite_get("dashfire");
+        df.image_xscale = 0
+        df.image_yscale = 0
+        df.scaledec_x = 0.2 * spr_dir
+        df.scaledec_y = 0.2
+        df.max_x = 1
+        df.deathtimer = 6
+        df.instant = true
+        
     }
     
-    if window == 2 and !special_down {
-        window_timer = 0
-        window = 3
-        if abs(hsp) > 6
-            hsp = sign(hsp) * 6
+
+    
+    if window == 2 {
+        if instance_exists(df) {
+            df.x = x
+            df.y = y - 24
+        }
+        
+        if window_timer == 6
+            dashfire = true
+    
+        if !special_down {
+            window_timer = 0
+            window = 3
+            if abs(hsp) > 6
+                hsp = sign(hsp) * 6
+        }
             
-        dashfire = false
         
     }
     
@@ -53,9 +75,21 @@ if (attack == AT_FSPECIAL) {
     can_fast_fall = false;
     print(window_timer)
     if window == 3 {
-        dashfire = false
-        if window_timer == 15 
+        if window_timer == 1 {
+            dashfire = false
+            dfstop = instance_create(x, y - 24, "obj_article2")
+            dfstop.sprite_index = sprite_get("dashfire");
+            dfstop.image_xscale = 1 * spr_dir
+            dfstop.image_yscale = 1
+            dfstop.scaledec_x = 0.1 * spr_dir
+            dfstop.deathtimer = 0
+        }
+        
+        if window_timer == 15  {
+            if abs(hsp) > 6
+                hsp = sign(hsp) * 6
             spinanyway = false
+        }
     }
 }
 
