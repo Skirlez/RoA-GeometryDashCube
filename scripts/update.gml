@@ -1,4 +1,6 @@
 
+if state_cat != SC_AIR_COMMITTED
+    drawsaw = false
 
 if state_cat == SC_AIR_NEUTRAL or spinanyway = true {
     jumpangle -= 10

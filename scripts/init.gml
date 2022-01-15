@@ -9,6 +9,8 @@ dashorbed = false
 spinanyway = false
 dashfire = false
 dashfireanim = 0
+sawangle = 0
+drawsaw = false
 
 hurtbox_spr = sprite_get("hurtbox");
 crouchbox_spr = asset_get("crouchbox");

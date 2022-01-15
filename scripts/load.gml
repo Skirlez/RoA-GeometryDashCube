@@ -23,7 +23,7 @@ sprite_change_offset("orangeportal1", 72, 32)
 sprite_change_offset("orangeportal2", 72, 32)
 sprite_change_offset("pad", 24, 24)
 sprite_change_offset("dashfire", 149, 52)
-
+sprite_change_offset("saw", 64, 64)
 
 sprite_change_offset("jumpstart", 24, 24);
 sprite_change_offset("jump", 24, 24);

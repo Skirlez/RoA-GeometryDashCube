@@ -12,6 +12,24 @@ if (attack == AT_NSPECIAL){
     }
 }
 
+if (attack == AT_NAIR) {
+    if window == 1 and window_timer == 1
+        drawsaw = true
+
+    
+    sawangle += 10
+    if sawangle == 360
+        sawangle = 0
+    
+    if window == 3 and window_timer == 11 {
+        drawsaw = false
+    }
+}
+else {
+    sawangle = 0 
+    drawsaw = false   
+}
+
 if (attack == AT_FSPECIAL) {
     if window == 1 {
         dashorb = instance_create(x, y - 24, "obj_article2")
