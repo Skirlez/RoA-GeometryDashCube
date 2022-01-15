@@ -3,5 +3,5 @@ if dashfire == true {
 }
 
 if drawsaw = true {
-    draw_sprite_ext(sprite_get("saw"), 0, x, y - 24, 0.75, 0.75, sawangle, c_white, 1)
+    draw_sprite_ext(sprite_get("saw"), 0, x, y - 24, 0., 0.75, sawangle, c_white, 1)
 }
