@@ -10,6 +10,13 @@ else {
 }
 spr_angle = jumpangle * spr_dir
 
+if padtimer > 0 {
+    state = PS_IDLE_AIR
+    padtimer -= 1
+}
+
+
+
 if state == PS_DOUBLE_JUMP and state_timer == 0 {
     yelloworb = instance_create(x, y, "obj_article2")
     yelloworb.sprite_index = sprite_get("yelloworb");

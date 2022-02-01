@@ -8,6 +8,7 @@ sprite_change_offset("dashstart", 24, 24);
 sprite_change_offset("dashstop", 24, 24);
 sprite_change_offset("dashturn", 24, 24);
 
+
 sprite_change_offset("hurtbox", 24, 48);
 sprite_change_offset("crouchbox", 24, 24);
 sprite_change_offset("yelloworb", 32, 32)
@@ -24,6 +25,8 @@ sprite_change_offset("orangeportal2", 72, 32)
 sprite_change_offset("pad", 24, 24)
 sprite_change_offset("dashfire", 149, 52)
 sprite_change_offset("saw", 64, 64)
+sprite_change_offset("spikebit", 2, 3);
+sprite_change_offset("spike", 24, 24);
 
 sprite_change_offset("jumpstart", 24, 24);
 sprite_change_offset("jump", 24, 24);

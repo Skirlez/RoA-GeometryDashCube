@@ -30,6 +30,7 @@ else {
     drawsaw = false   
 }
 
+
 if (attack == AT_FSPECIAL) {
     if window == 1 {
         dashorb = instance_create(x, y - 24, "obj_article2")
@@ -118,6 +119,7 @@ if (attack == AT_USPECIAL) {
 
 if (attack == AT_DSPECIAL) and padded == false {
     instance_destroy(pad)
+    padtimer = 10
     pad = instance_create(x, y - 22, "obj_article3")
     pad.sprite_index = sprite_get("pad")
     padded = true
