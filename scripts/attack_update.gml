@@ -119,7 +119,7 @@ if (attack == AT_USPECIAL) {
 
 if (attack == AT_DSPECIAL) and padded == false {
     instance_destroy(pad)
-    padtimer = 10
+    padtimer = 6
     pad = instance_create(x, y - 22, "obj_article3")
     pad.sprite_index = sprite_get("pad")
     padded = true
