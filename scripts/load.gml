@@ -67,7 +67,7 @@ sprite_change_offset("plat", 64, 94);
 
 sprite_change_offset("nspecial_proj", 64, 94);
 
-set_victory_theme( sound_get( "music_win_gdcube" ));
+set_victory_theme(sound_get("music_win_gdcube"));
 /*
 sprite_change_offset("idle", 32, 32);
 sprite_change_offset("hurt", 32, 32);
