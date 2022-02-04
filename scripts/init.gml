@@ -12,6 +12,10 @@ dashfireanim = 0
 sawangle = 0
 drawsaw = false
 padtimer = 0
+drawfish = false
+fjawangle = 0
+fheadangle = 0
+fishoffset = 20
 
 hurtbox_spr = sprite_get("hurtbox");
 crouchbox_spr = asset_get("crouchbox");

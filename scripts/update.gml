@@ -129,8 +129,10 @@ else if gravitytimer == 41 {
 if has_hit == false
     blackorbed = false
     
-if state != PS_ATTACK_GROUND
+if state != PS_ATTACK_GROUND {
     padded = false   
+    drawfish = false
+}
 
 if dashfire == true 
     dashfireanim += 0.25

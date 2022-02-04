@@ -28,6 +28,9 @@ sprite_change_offset("saw2", 32, 32)
 sprite_change_offset("saw3", 43, 43)
 sprite_change_offset("spikebit", 2, 3);
 sprite_change_offset("spike", 24, 24);
+sprite_change_offset("fishjaw", 272, 43);
+sprite_change_offset("fishhead", 263, 121); // amazing frontal lobe
+
 
 sprite_change_offset("jumpstart", 24, 24);
 sprite_change_offset("jump", 24, 24);

@@ -145,3 +145,35 @@ if (attack == AT_DAIR) {
     }   
 }
 
+if (attack == AT_FSTRONG) {
+    drawfish = true
+    if window == 1 {
+        fishoffset = -80
+        fjawangle = 0
+        fheadangle = 0
+    }
+    else { 
+        if window == 2 and window_timer == 1 
+            fishspeed = 20
+        
+        if fishspeed > 0 {
+            fishoffset += fishspeed * 0.6
+                    
+            if fishspeed > 12 {
+                fjawangle = -((20 - fishspeed) * 5)
+                fheadangle = (20 - fishspeed) * 5
+            }
+            else {
+                fjawangle = -fishspeed * 3 + 2
+                fheadangle = fishspeed * 3 - 2
+            }
+            fishspeed -= sign(fishspeed)   
+        }
+        else {
+            fjawangle = 2
+            fheadangle = -2
+        }
+    }
+}
+
+
