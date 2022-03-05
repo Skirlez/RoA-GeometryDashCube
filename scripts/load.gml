@@ -35,7 +35,7 @@ sprite_change_offset("fishhead", 263, 121); // amazing frontal lobe
 sprite_change_offset("jumpstart", 24, 24);
 sprite_change_offset("jump", 24, 24);
 sprite_change_offset("doublejump", 24, 24);
-sprite_change_offset("walljump", 31, 39);
+sprite_change_offset("walljump", 24, 24);
 sprite_change_offset("pratfall", 24, 24);
 sprite_change_offset("land", 24, 24);
 sprite_change_offset("landinglag", 24, 24);
@@ -43,7 +43,8 @@ sprite_change_offset("landinglag", 24, 24);
 sprite_change_offset("parry", 32, 32);
 sprite_change_offset("roll_forward", 32, 32);
 sprite_change_offset("roll_backward", 32, 32);
-sprite_change_offset("airdodge", 32, 32);
+sprite_change_offset("airdodge", 24, 24);
+sprite_change_offset("safeblock", 24, 24);
 sprite_change_offset("waveland", 32, 32);
 sprite_change_offset("tech", 32, 32);
 
@@ -71,6 +72,7 @@ sprite_change_offset("plat", 64, 94);
 sprite_change_offset("nspecial_proj", 64, 94);
 
 set_victory_theme(sound_get("music_win_gdcube"));
+set_victory_portrait(sprite_get("portrait"));
 /*
 sprite_change_offset("idle", 32, 32);
 sprite_change_offset("hurt", 32, 32);

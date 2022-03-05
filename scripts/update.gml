@@ -129,7 +129,7 @@ else if gravitytimer == 41 {
 if has_hit == false
     blackorbed = false
     
-if state != PS_ATTACK_GROUND {
+if state != PS_ATTACK_GROUND or attack != AT_FSTRONG {
     padded = false   
     drawfish = false
 }

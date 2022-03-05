@@ -21,15 +21,15 @@ hurtbox_spr = sprite_get("hurtbox");
 crouchbox_spr = asset_get("crouchbox");
 air_hurtbox_spr = -1;
 hitstun_hurtbox_spr = -1;
-draw_y = -32 
+draw_y = 0 
 
 
-char_height = 24;
-idle_anim_speed = .1;
-crouch_anim_speed = .1;
-walk_anim_speed = .125;
-dash_anim_speed = .2;
-pratfall_anim_speed = .25;
+char_height = 32;
+idle_anim_speed = 0;
+crouch_anim_speed = 1;
+walk_anim_speed = 0;
+dash_anim_speed = 0;
+pratfall_anim_speed = 0;
 
 walk_speed = 3.25;
 walk_accel = 0.2;
